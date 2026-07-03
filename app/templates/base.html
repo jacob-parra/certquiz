@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}CertQuiz{% endblock %}</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="/" class="logo">CertQuiz</a>
+            <nav>
+                <a href="/add-question" class="nav-link">Add Question</a>
+                <a href="/stats" class="nav-link">Stats</a>
+                <a href="/register" class="nav-link">Add Account</a>
+                {% if request.session.get("username") %}
+                    <span class="nav-user">{{ request.session.get("username") }}</span>
+                    <a href="/logout" class="nav-link">Log Out</a>
+                {% endif %}
+            </nav>
+        </header>
+        <main>
+            {% block content %}{% endblock %}
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CertQuiz - Create Account</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container auth-container">
+        <h1>Welcome to CertQuiz</h1>
+        <p class="subtitle">No accounts exist yet. Create the first one to get started.</p>
+
+        {% if errors %}
+            <ul class="error-list">
+                {% for e in errors %}<li>{{ e }}</li>{% endfor %}
+            </ul>
+        {% endif %}
+
+        <form action="/setup" method="post" class="auth-form">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" required autofocus value="{{ prev_username or '' }}">
+
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required minlength="8">
+
+            <label for="confirm_password">Confirm password</label>
+            <input type="password" name="confirm_password" id="confirm_password" required minlength="8">
+
+            <button type="submit">Create Account</button>
+        </form>
+        <p class="hint">Password must be at least 8 characters. You can add more accounts later from inside the app.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}CertQuiz - Home{% endblock %}
+{% block content %}
+    <h1>Cert Practice Quiz</h1>
+    <p class="subtitle">Pick a cert and how many questions you want.</p>
+
+    {% if error %}
+        <p class="error">{{ error }}</p>
+    {% endif %}
+
+    <form action="/quiz" method="get" class="quiz-form">
+        <label for="cert">Certification</label>
+        <select name="cert" id="cert">
+            <option value="All">All</option>
+            {% for c in certs %}
+                <option value="{{ c }}">{{ c }}</option>
+            {% endfor %}
+        </select>
+
+        <label for="count">Number of questions</label>
+        <input type="number" name="count" id="count" value="10" min="1" max="100">
+
+        <button type="submit">Start Quiz</button>
+    </form>
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Add Account{% endblock %}
+{% block content %}
+    <h1>Add an Account</h1>
+    <p class="subtitle">Create a separate login for someone else (their quiz stats stay separate from yours).</p>
+
+    {% if success %}
+        <p class="success">✅ Account "{{ created_username }}" created. They can now log in with it. <a href="/register">Add another</a> or <a href="/">go home</a>.</p>
+    {% endif %}
+
+    {% if errors %}
+        <ul class="error-list">
+            {% for e in errors %}<li>{{ e }}</li>{% endfor %}
+        </ul>
+    {% endif %}
+
+    <form action="/register" method="post" class="auth-form">
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" required autofocus value="{{ prev_username or '' }}">
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required minlength="8">
+
+        <label for="confirm_password">Confirm password</label>
+        <input type="password" name="confirm_password" id="confirm_password" required minlength="8">
+
+        <button type="submit">Create Account</button>
+    </form>
+{% endblock %}

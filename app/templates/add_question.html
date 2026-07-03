@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% block title %}Add a Question{% endblock %}
+{% block content %}
+    <h1>Add a Question</h1>
+    <p class="subtitle">Add your own question directly to the database. No file editing needed.</p>
+
+    {% if success %}
+        <p class="success">✅ Question added under "{{ added_cert }}". <a href="/add-question">Add another</a> or <a href="/">go home</a>.</p>
+    {% endif %}
+
+    {% if errors %}
+        <ul class="error-list">
+            {% for e in errors %}<li>{{ e }}</li>{% endfor %}
+        </ul>
+    {% endif %}
+
+    <form action="/add-question" method="post" class="add-question-form">
+
+        <fieldset>
+            <legend>Cert</legend>
+            <label for="cert_existing">Pick existing</label>
+            <select name="cert_existing" id="cert_existing">
+                <option value="">-- none --</option>
+                {% for c in certs %}
+                    <option value="{{ c }}" {% if prev and prev.cert == c %}selected{% endif %}>{{ c }}</option>
+                {% endfor %}
+            </select>
+            <label for="cert_new">...or type a new one</label>
+            <input type="text" name="cert_new" id="cert_new" placeholder="e.g. CySA+"
+                   value="{% if prev and prev.cert not in certs %}{{ prev.cert }}{% endif %}">
+        </fieldset>
+
+        <fieldset>
+            <legend>Domain <span class="optional">(optional)</span></legend>
+            <label for="domain_existing">Pick existing</label>
+            <select name="domain_existing" id="domain_existing">
+                <option value="">-- none --</option>
+                {% for d in domains %}
+                    <option value="{{ d }}" {% if prev and prev.domain == d %}selected{% endif %}>{{ d }}</option>
+                {% endfor %}
+            </select>
+            <label for="domain_new">...or type a new one</label>
+            <input type="text" name="domain_new" id="domain_new" placeholder="e.g. Cryptography & PKI"
+                   value="{% if prev and prev.domain and prev.domain not in domains %}{{ prev.domain }}{% endif %}">
+        </fieldset>
+
+        <label for="question_text">Question text</label>
+        <textarea name="question_text" id="question_text" rows="3" required>{% if prev %}{{ prev.question_text }}{% endif %}</textarea>
+
+        <fieldset>
+            <legend>Answer choices <span class="optional">(fill in 2-6, mark one correct)</span></legend>
+            {% for i in range(6) %}
+                <div class="choice-row">
+                    <input type="radio" name="correct_choice" value="{{ i }}"
+                           {% if prev and prev.correct_index|string == i|string %}checked{% endif %}
+                           {% if not prev and i == 0 %}{% endif %}>
+                    <input type="text" name="choice_{{ i }}" placeholder="Choice {{ i + 1 }}{% if i < 2 %} (required){% endif %}"
+                           value="{% if prev and prev.choices %}{{ prev.choices[i] }}{% endif %}">
+                </div>
+            {% endfor %}
+            <p class="hint">Click the radio button next to the correct answer.</p>
+        </fieldset>
+
+        <label for="explanation">Explanation <span class="optional">(optional, shown after answering)</span></label>
+        <textarea name="explanation" id="explanation" rows="2">{% if prev and prev.explanation %}{{ prev.explanation }}{% endif %}</textarea>
+
+        <button type="submit">Add Question</button>
+    </form>
+{% endblock %}

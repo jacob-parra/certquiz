@@ -1,0 +1,19 @@
+services:
+  certquiz:
+    build: .
+    container_name: certquiz
+    ports:
+      - "8000:8000"
+    volumes:
+      - certquiz-data:/data
+    environment:
+      - DB_PATH=/data/certquiz.db
+      # CHANGE THIS before deploying -- this signs login session cookies.
+      # If it leaks or stays as the default, anyone who gets a copy could
+      # forge a valid session cookie. Generate a real one with:
+      #   python3 -c "import secrets; print(secrets.token_hex(32))"
+      - SESSION_SECRET=change-this-to-a-random-secret-before-deploying
+    restart: unless-stopped
+
+volumes:
+  certquiz-data:

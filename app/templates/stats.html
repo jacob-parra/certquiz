@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Stats{% endblock %}
+{% block content %}
+    <h1>Your Stats</h1>
+
+    {% if total_attempts == 0 %}
+        <p>No attempts logged yet. Take a quiz first.</p>
+    {% else %}
+        <p class="results-score">{{ correct_attempts }} / {{ total_attempts }} correct overall ({{ pct }}%)</p>
+
+        <h2>Most Missed Questions</h2>
+        <ul class="missed-list">
+            {% for question, miss_count in missed %}
+                <li>
+                    <strong>{{ question.cert }}</strong> &mdash; {{ question.question_text }}
+                    <span class="miss-count">missed {{ miss_count }}x</span>
+                </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    <a href="/" class="button-link secondary">Back to Home</a>
+{% endblock %}

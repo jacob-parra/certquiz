@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CertQuiz - Log In</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container auth-container">
+        <h1>Log In</h1>
+
+        {% if errors %}
+            <ul class="error-list">
+                {% for e in errors %}<li>{{ e }}</li>{% endfor %}
+            </ul>
+        {% endif %}
+
+        <form action="/login" method="post" class="auth-form">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" required autofocus value="{{ prev_username or '' }}">
+
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required>
+
+            <button type="submit">Log In</button>
+        </form>
+    </div>
+</body>
+</html>

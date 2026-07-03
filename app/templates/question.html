@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}Question {{ index + 1 }} of {{ total }}{% endblock %}
+{% block content %}
+    <div class="progress">Question {{ index + 1 }} of {{ total }} &middot; Score: {{ score }}</div>
+
+    {% if question.domain %}
+        <p class="domain-tag">{{ question.cert }} &mdash; {{ question.domain }}</p>
+    {% endif %}
+
+    <h2 class="question-text">{{ question.question_text }}</h2>
+
+    <form action="/answer" method="post" class="choices-form">
+        <input type="hidden" name="question_id" value="{{ question.id }}">
+        <input type="hidden" name="index" value="{{ index }}">
+        <input type="hidden" name="ids" value="{{ ids }}">
+        <input type="hidden" name="score" value="{{ score }}">
+        <input type="hidden" name="cert" value="{{ cert }}">
+
+        {% for choice in choices %}
+            <label class="choice-option">
+                <input type="radio" name="choice_id" value="{{ choice.id }}" required>
+                {{ choice.choice_text }}
+            </label>
+        {% endfor %}
+
+        <button type="submit">Submit Answer</button>
+    </form>
+{% endblock %}

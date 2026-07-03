@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Quiz Results{% endblock %}
+{% block content %}
+    <h1>Quiz Complete</h1>
+    <p class="results-score">{{ score }} / {{ total }} ({{ pct }}%)</p>
+
+    {% if pct >= 80 %}
+        <p class="results-msg good">Solid run. Keep this up.</p>
+    {% elif pct >= 60 %}
+        <p class="results-msg ok">Decent, but a few gaps to shore up.</p>
+    {% else %}
+        <p class="results-msg bad">Worth another pass through this material.</p>
+    {% endif %}
+
+    <div class="results-actions">
+        <a href="/quiz?cert={{ cert }}&count=10" class="button-link">Retake ({{ cert }})</a>
+        <a href="/" class="button-link secondary">Back to Home</a>
+        <a href="/stats" class="button-link secondary">View Stats</a>
+    </div>
+{% endblock %}

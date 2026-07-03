@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}{{ "Correct!" if was_correct else "Incorrect" }}{% endblock %}
+{% block content %}
+    <div class="progress">Question {{ index + 1 }} of {{ total }} &middot; Score: {{ score }}</div>
+
+    <h2 class="question-text">{{ question.question_text }}</h2>
+
+    {% if was_correct %}
+        <p class="feedback correct">✅ Correct!</p>
+    {% else %}
+        <p class="feedback incorrect">❌ Incorrect — you chose: {{ chosen.choice_text }}</p>
+        <p class="correct-answer">Correct answer: {{ correct_choice.choice_text }}</p>
+    {% endif %}
+
+    {% if question.explanation %}
+        <p class="explanation"><strong>Why:</strong> {{ question.explanation }}</p>
+    {% endif %}
+
+    <form action="/question/{{ index + 1 }}" method="get">
+        <input type="hidden" name="ids" value="{{ ids }}">
+        <input type="hidden" name="score" value="{{ score }}">
+        <input type="hidden" name="cert" value="{{ cert }}">
+        <button type="submit">
+            {{ "See Results" if index + 1 >= total else "Next Question" }}
+        </button>
+    </form>
+{% endblock %}
