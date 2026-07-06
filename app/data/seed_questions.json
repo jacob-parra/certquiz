@@ -7503,5 +7503,233 @@
       {"text": "To provide NAT services", "correct": false},
       {"text": "To provide automatic IP addressing on the network", "correct": false}
     ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Operations",
+    "question_text": "Your ISP account manager suggests that it might be appropriate for you to install a DNS server internally. Which of the following functions does the DNS server perform?",
+    "explanation": "DNS performs hostname-to-IP address resolution, and an internal DNS server can resolve local hostnames without sending every request externally.",
+    "choices": [
+      {"text": "It allows some hostname-to-IP address resolutions to occur internally.", "correct": true},
+      {"text": "It performs network address translation services.", "correct": false},
+      {"text": "It streamlines the resolution of NetBIOS names to IP addresses.", "correct": false},
+      {"text": "It allows users to retrieve Internet web pages more quickly.", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Concepts",
+    "question_text": "Which of the following IPv6 addressing types is associated with IPv4 automatic 169.254.0.0 addressing?",
+    "explanation": "IPv4 APIPA addresses in the 169.254.0.0/16 range are conceptually equivalent to IPv6 link-local addresses, which are used for local-link communication without a router.",
+    "choices": [
+      {"text": "Link-local", "correct": true},
+      {"text": "Site-local", "correct": false},
+      {"text": "Global address", "correct": false},
+      {"text": "Unicast", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Troubleshooting",
+    "question_text": "Which of the following utilities would you use to view the TCP connections that have been established between two systems?",
+    "explanation": "netstat displays active TCP connections, including the local and remote endpoints and connection state.",
+    "choices": [
+      {"text": "netstat", "correct": true},
+      {"text": "nbtstat", "correct": false},
+      {"text": "tracert", "correct": false},
+      {"text": "ipconfig", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Security",
+    "question_text": "Which of the following authentication systems uses tickets as part of its authentication process?",
+    "explanation": "Kerberos uses tickets issued by a Key Distribution Center (KDC) to authenticate users and services securely across a network.",
+    "choices": [
+      {"text": "Kerberos", "correct": true},
+      {"text": "HTTPS", "correct": false},
+      {"text": "POP3", "correct": false},
+      {"text": "SSL", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Operations",
+    "question_text": "Which of the following terms describes how long it takes routers to update changes in the network topology?",
+    "explanation": "Convergence is the amount of time required for routers to learn about a topology change and update their routing tables accordingly.",
+    "choices": [
+      {"text": "Convergence", "correct": true},
+      {"text": "Poison reverse", "correct": false},
+      {"text": "Split horizon with poison reverse", "correct": false},
+      {"text": "BGP", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Implementation",
+    "question_text": "Which term describes the process of using parts of the node address range of an IP address as the network ID?",
+    "explanation": "Subnetting borrows bits from the host portion of an IP address to create additional network IDs and divide a network into smaller subnets.",
+    "choices": [
+      {"text": "Subnetting", "correct": true},
+      {"text": "Supernetting", "correct": false},
+      {"text": "Subnet masking", "correct": false},
+      {"text": "Super routing", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Concepts",
+    "question_text": "What network device forwards packets only to an intended port?",
+    "explanation": "A switch forwards frames only to the port associated with the destination MAC address, rather than broadcasting them to all ports like a hub.",
+    "choices": [
+      {"text": "Switch", "correct": true},
+      {"text": "Hub", "correct": false},
+      {"text": "PPPoE", "correct": false},
+      {"text": "PPP", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Troubleshooting",
+    "question_text": "A user on your network can send data packets within the local subnet but cannot send packets beyond the local subnet. Which of the following is likely the problem?",
+    "explanation": "If a host can reach only devices on its own subnet but not remote networks, the most likely issue is an incorrect or missing default gateway configuration.",
+    "choices": [
+      {"text": "Incorrect gateway information", "correct": true},
+      {"text": "Invalid permissions", "correct": false},
+      {"text": "No DNS server is installed", "correct": false},
+      {"text": "No WINS server is installed", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Implementation",
+    "question_text": "You are the administrator for a network that uses TCP/IP. You are using a single registered Class C network address. You want to continue to use it because many of your systems are accessed from outside sources, but you also want to create more networks so that you can more effectively manage traffic and security. Which of the following strategies would help you achieve this?",
+    "explanation": "Subnetting lets you divide a single registered network into multiple smaller logical networks while keeping the same public address space.",
+    "choices": [
+      {"text": "Use subnetting.", "correct": true},
+      {"text": "Implement a 127.x.x.x addressing system throughout the network.", "correct": false},
+      {"text": "Use reverse proxy.", "correct": false},
+      {"text": "Use private addressing.", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Troubleshooting",
+    "question_text": "In a hardware loopback plug, which wire numbers are connected? (Choose the two best answers.)",
+    "explanation": "A standard Ethernet loopback plug connects the transmit pins to the receive pins, which means pin 1 is connected to pin 3 and pin 2 is connected to pin 6.",
+    "choices": [
+      {"text": "1 and 3", "correct": true},
+      {"text": "2 and 6", "correct": true},
+      {"text": "3 and 5", "correct": false},
+      {"text": "3 and 4", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Concepts",
+    "question_text": "You are working with an IPv6 network, and you need to ping the local loopback address. You know that the loopback address for the IPv4 network is 127.0.0.1, and you need the equivalent for the IPv6 network. Which address should you use? (Choose two.)",
+    "explanation": "The IPv6 loopback address is ::1, and its fully expanded form is 0:0:0:0:0:0:0:1.",
+    "choices": [
+      {"text": "0:0:0:0:0:0:0:1", "correct": true},
+      {"text": "::1", "correct": true},
+      {"text": "::127", "correct": false},
+      {"text": "FE80::", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Concepts",
+    "question_text": "Which two of the following devices can operate at the network layer of the OSI model?",
+    "explanation": "Routers operate at Layer 3 by forwarding packets between networks, and multilayer switches can also operate at the network layer by performing routing functions.",
+    "choices": [
+      {"text": "Router", "correct": true},
+      {"text": "Switch", "correct": true},
+      {"text": "AP", "correct": false},
+      {"text": "Hub", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Troubleshooting",
+    "question_text": "A client on your network has had no problems accessing the wireless network in the past, but recently moved to a new office. Since the move, she has had only intermittent network access. Which of the following is most likely the cause of the problem?",
+    "explanation": "Because the problem began after the move and is intermittent, the most likely cause is that the client is now too far from the access point and has a weak signal.",
+    "choices": [
+      {"text": "The client system has moved too far from the AP.", "correct": true},
+      {"text": "The SSID on the client is misconfigured.", "correct": false},
+      {"text": "The WEP settings are incorrect.", "correct": false},
+      {"text": "The AP is using an omnidirectional antenna.", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Troubleshooting",
+    "question_text": "You are a network administrator managing a midsized network that uses a NetWare print server, a Windows application server, and a Linux firewall server. One of your servers loses network connectivity. You type ifconfig at the command line to determine whether the server has a valid IP address. Which server are you using the ifconfig command on to see if it has lost connectivity?",
+    "explanation": "ifconfig is a traditional Linux/UNIX command used to view and configure network interfaces, so it would be used on the Linux firewall server.",
+    "choices": [
+      {"text": "The firewall server.", "correct": true},
+      {"text": "The print server.", "correct": false},
+      {"text": "The application server.", "correct": false},
+      {"text": "ifconfig is not a valid command on any of these platforms.", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Operations",
+    "question_text": "You are managing a network that uses both a UNIX server and a Windows server. Which of the following protocols can you use to transfer files between the two servers?",
+    "explanation": "FTP is a standard file transfer protocol supported by both UNIX and Windows systems for moving files between hosts.",
+    "choices": [
+      {"text": "FTP", "correct": true},
+      {"text": "Telnet", "correct": false},
+      {"text": "PPP", "correct": false},
+      {"text": "PPTP", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Troubleshooting",
+    "question_text": "A user complains that access to a web page is slow. What utility can you use to find the bottleneck?",
+    "explanation": "tracert shows each hop between the client and the destination and can help identify where latency or packet delays are occurring.",
+    "choices": [
+      {"text": "tracert", "correct": true},
+      {"text": "ping", "correct": false},
+      {"text": "Telnet", "correct": false},
+      {"text": "nbtstat", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Operations",
+    "question_text": "During a busy administrative week, you install a new virus suite in your network of 55 computers, a new RAID array in one of the servers, and a new office suite on 25 of the computer systems. After all the updates, you are experiencing system errors throughout the entire network. What should you do to help isolate the problem?",
+    "explanation": "When widespread issues appear after major software changes, checking the vendor’s site for known issues, patches, or service packs is a good first step to isolate whether a recent update introduced the problem.",
+    "choices": [
+      {"text": "Check the virus suite vendor’s website for system patches or service packs.", "correct": true},
+      {"text": "Disable the RAID array.", "correct": false},
+      {"text": "Uninstall the office suite.", "correct": false},
+      {"text": "Reinstall the virus software.", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Troubleshooting",
+    "question_text": "What utility would you use to check the IP configuration on a Windows 7 system?",
+    "explanation": "ipconfig is the standard Windows command-line utility for viewing a system’s IP addressing and network configuration.",
+    "choices": [
+      {"text": "ipconfig", "correct": true},
+      {"text": "netstat", "correct": false},
+      {"text": "nslookup", "correct": false},
+      {"text": "ping", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Operations",
+    "question_text": "Which of the following backup methods clear the archive bit? (Choose the two best answers.)",
+    "explanation": "A full backup copies all selected files and clears the archive bit, while an incremental backup copies changed files and also clears the archive bit after backup.",
+    "choices": [
+      {"text": "Full", "correct": true},
+      {"text": "Incremental", "correct": true},
+      {"text": "Differential", "correct": false},
+      {"text": "Sequential", "correct": false}
+    ]
   }
 ]
