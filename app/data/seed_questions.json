@@ -6761,5 +6761,747 @@
       {"text": "RPO", "correct": false},
       {"text": "Availability percentage only", "correct": false}
     ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Concepts",
+    "question_text": "In the context of the OSI model, the term \"Data encapsulation\" is used to describe a process where each layer of the OSI model adds its own control information to the original data that is being passed across the layers from the Physical Layer up to the Application Layer.",
+    "explanation": "Data encapsulation means each layer adds its own header or trailer as data moves through the OSI model, but this happens as data moves from the Application Layer down to the Physical Layer, not from the Physical Layer up to the Application Layer.",
+    "choices": [
+      {"text": "False", "correct": true},
+      {"text": "True", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Concepts",
+    "question_text": "A network hardware or software solution designed for managing the optimal distribution of workloads across multiple computing resources is called:",
+    "explanation": "A load balancer distributes traffic and workloads across multiple servers or resources to improve performance, efficiency, and availability.",
+    "choices": [
+      {"text": "Load balancer", "correct": true},
+      {"text": "Network switch", "correct": false},
+      {"text": "Proxy server", "correct": false},
+      {"text": "Bandwidth manager", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Concepts",
+    "question_text": "In computer networking, a computer system or an application that acts as an intermediary between another computer and the Internet is commonly referred to as:",
+    "explanation": "A proxy acts as an intermediary between a client and another network, often the internet, forwarding requests and responses on the client's behalf.",
+    "choices": [
+      {"text": "Proxy", "correct": true},
+      {"text": "Bridge", "correct": false},
+      {"text": "Server", "correct": false},
+      {"text": "Gateway", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Concepts",
+    "question_text": "A dedicated storage appliance that can be added to a local network is known as:",
+    "explanation": "A NAS, or Network Attached Storage device, is a dedicated storage appliance connected to a network that provides file-level storage access to clients.",
+    "choices": [
+      {"text": "NAS", "correct": true},
+      {"text": "SAN", "correct": false},
+      {"text": "SSD", "correct": false},
+      {"text": "DAS", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Concepts",
+    "question_text": "A dedicated local network consisting of devices providing data access is called:",
+    "explanation": "A SAN, or Storage Area Network, is a dedicated network that provides block-level storage access to servers and storage devices.",
+    "choices": [
+      {"text": "SAN", "correct": true},
+      {"text": "SDN", "correct": false},
+      {"text": "NAS", "correct": false},
+      {"text": "iSCSI", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Operations",
+    "question_text": "Which of the following answers refers to a solution that allows network administrators to prioritize certain types of network traffic?",
+    "explanation": "QoS, or Quality of Service, is used to prioritize important traffic such as voice, video, or business-critical applications over less important traffic.",
+    "choices": [
+      {"text": "QoS", "correct": true},
+      {"text": "NAC", "correct": false},
+      {"text": "NAT", "correct": false},
+      {"text": "UTM", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Concepts",
+    "question_text": "A field in an IP packet that specifies how many more hops a packet can travel before being discarded is known as:",
+    "explanation": "TTL, or Time To Live, is the field that limits how many router hops a packet can make before it is discarded to prevent routing loops.",
+    "choices": [
+      {"text": "TTL", "correct": true},
+      {"text": "ToS", "correct": false},
+      {"text": "OPT", "correct": false},
+      {"text": "MTU", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Concepts",
+    "question_text": "Which of the answers listed below refers to a solution that enables the replacement of traditional network hardware functionalities with software via virtualization?",
+    "explanation": "NFV, or Network Function Virtualization, replaces traditional network hardware functions such as firewalls, load balancers, and routers with software-based virtualized services.",
+    "choices": [
+      {"text": "NFV", "correct": true},
+      {"text": "SDN", "correct": false},
+      {"text": "VM", "correct": false},
+      {"text": "SVI", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Security",
+    "question_text": "You suspect that someone is capturing the data sent on your network. You want to capture data to ensure that it is encrypted and cannot be read by intruders. Which of the following network utilities can both intruders and administrators use to capture network traffic?",
+    "explanation": "A packet sniffer captures network traffic for analysis, and while administrators use it for troubleshooting, attackers can also use it to intercept unencrypted traffic.",
+    "choices": [
+      {"text": "Packet sniffer", "correct": true},
+      {"text": "Port scanner", "correct": false},
+      {"text": "Packet filter", "correct": false},
+      {"text": "Data watcher", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Security",
+    "question_text": "You have been hired to review the security of a company's network. Upon investigation, you notice that a wireless AP has been installed in a wiring closet without the consent of the administrator. The AP is actively used by remote users to access resources on the company's network. Which security problem does this represent?",
+    "explanation": "A rogue AP is an unauthorized wireless access point connected to the network, creating a major security risk by allowing uncontrolled access.",
+    "choices": [
+      {"text": "Rogue AP", "correct": true},
+      {"text": "Rogue protocol interception", "correct": false},
+      {"text": "Network sniffing", "correct": false},
+      {"text": "Social engineering", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Implementation",
+    "question_text": "You have been employed by a small company to implement a fault-tolerant hard disk configuration. You have purchased four 4TB hard disks, and you plan to install RAID 5 on the server. What is the storage capacity of the RAID solution?",
+    "explanation": "RAID 5 uses the equivalent of one disk for parity, so with four 4TB drives the usable capacity is 3 × 4TB = 12TB.",
+    "choices": [
+      {"text": "12TB", "correct": true},
+      {"text": "4TB", "correct": false},
+      {"text": "8TB", "correct": false},
+      {"text": "16TB", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Troubleshooting",
+    "question_text": "You have been called in to troubleshoot a small network. The network uses TCP/IP and statically assigned IPv4 information. You add a new workstation to the network. It can connect to the local network but not to a server on a remote network. Which of the following is most likely the cause of the problem?",
+    "explanation": "If the workstation can access the local network but not remote networks, the most likely issue is an incorrect default gateway, which is required to reach other networks.",
+    "choices": [
+      {"text": "Incorrect default gateway", "correct": true},
+      {"text": "Incorrect IP address", "correct": false},
+      {"text": "The DHCP server is unavailable", "correct": false},
+      {"text": "Duplicate IP addresses are being used", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Troubleshooting",
+    "question_text": "Under what circumstance would you change the default channel on an access point?",
+    "explanation": "Changing the wireless channel is typically done to avoid interference caused by overlapping channels from nearby access points.",
+    "choices": [
+      {"text": "When channel overlap occurs between access points", "correct": true},
+      {"text": "To release and renew the SSID", "correct": false},
+      {"text": "To increase the security settings", "correct": false},
+      {"text": "To decrease the security settings", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Security",
+    "question_text": "On several occasions your wireless router has been compromised, and intruders are logging onto it. Which of the following strategies could you use to increase the security of the wireless routers? (Choose the two best answers.)",
+    "explanation": "Disabling SSID broadcast can make the network less visible to casual attackers, and MAC filtering can restrict which devices are allowed to connect, making unauthorized access more difficult.",
+    "choices": [
+      {"text": "Use MAC filtering", "correct": true},
+      {"text": "Use SSL", "correct": false},
+      {"text": "Use TLS", "correct": false},
+      {"text": "Use wireless filtering", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Security",
+    "question_text": "You have just purchased a new wireless access point. You change the security settings to use 128-bit encryption. How must the client systems be configured?",
+    "explanation": "Wireless clients must use matching encryption settings in order to successfully authenticate and communicate with the access point.",
+    "choices": [
+      {"text": "All client systems must be set to 128-bit encryption.", "correct": true},
+      {"text": "The client system inherits security settings from the AP.", "correct": false},
+      {"text": "Wireless security does not support 128-bit encryption.", "correct": false},
+      {"text": "The client wireless settings must be set to autodetect.", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Concepts",
+    "question_text": "Which of the following topology type offers the greatest amount of redundancy?",
+    "explanation": "A mesh topology provides the greatest redundancy because devices are interconnected with multiple paths, reducing the impact of a single link failure.",
+    "choices": [
+      {"text": "Mesh", "correct": true},
+      {"text": "Star", "correct": false},
+      {"text": "Bus", "correct": false},
+      {"text": "Ring", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Concepts",
+    "question_text": "You need to install a network printer, and you require the printer's MAC address to finish the installation. Which of the following is a valid MAC address?",
+    "explanation": "A MAC address is a 48-bit hexadecimal address written as six pairs of hexadecimal characters separated by colons or hyphens, such as 00:04:e2:1c:7b:5a.",
+    "choices": [
+      {"text": "00:04:e2:1c:7b:5a", "correct": true},
+      {"text": "192.168.2.13", "correct": false},
+      {"text": "0x00007856", "correct": false},
+      {"text": "56g78:00h6:1415", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Concepts",
+    "question_text": "You have been called in to replace a faulty ST connector. Which of the following media types are you working with?",
+    "explanation": "An ST connector is a fiber-optic connector type commonly associated with fiber cabling, including single-mode fiber.",
+    "choices": [
+      {"text": "Single-mode fiber", "correct": true},
+      {"text": "RG-58", "correct": false},
+      {"text": "RG-62", "correct": false},
+      {"text": "SCSI", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Security",
+    "question_text": "Your manager asks you to recommend a secure way to copy files between a server on your network and a remote server in another location. Which of the following solutions are you most likely to recommend?",
+    "explanation": "SFTP securely transfers files by using SSH to encrypt the session, making it a safer choice than plain FTP or TFTP.",
+    "choices": [
+      {"text": "SFTP", "correct": true},
+      {"text": "TFTP", "correct": false},
+      {"text": "FTP", "correct": false},
+      {"text": "IGMP", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Implementation",
+    "question_text": "You are setting up a wide area network between two school campuses, and you decide to use BRI ISDN. What is the maximum throughput of your connection?",
+    "explanation": "BRI ISDN provides two 64 Kbps bearer channels, for a total maximum throughput of 128 Kbps when both channels are used together.",
+    "choices": [
+      {"text": "128Kbps", "correct": true},
+      {"text": "64Kbps", "correct": false},
+      {"text": "128Mbps", "correct": false},
+      {"text": "64Mbps", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Concepts",
+    "question_text": "You are troubleshooting an older 100BaseT network, and you suspect that the maximum cable length has been exceeded. What is the maximum length of a 100BaseT network segment?",
+    "explanation": "A standard 100BaseT Ethernet segment over twisted-pair cabling has a maximum length of 100 meters.",
+    "choices": [
+      {"text": "100 meters", "correct": true},
+      {"text": "25 meters", "correct": false},
+      {"text": "185 meters", "correct": false},
+      {"text": "500 meters", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Concepts",
+    "question_text": "Which of the following is a valid IPv6 address?",
+    "explanation": "A valid IPv6 address contains eight groups of hexadecimal values separated by colons, with each group containing up to four hexadecimal characters. 42DE:7E55:63F2:21AA:CBD4:D773:CC21:554F matches that format.",
+    "choices": [
+      {"text": "42DE:7E55:63F2:21AA:CBD4:D773:CC21:554F", "correct": true},
+      {"text": "42DE:7E55:63F2:21AA:CBD4:D773", "correct": false},
+      {"text": "42CD:7E55:63F2:21GA:CBD4:D773:CC21:554F", "correct": false},
+      {"text": "42DE:7E55:63F2:21AA", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Troubleshooting",
+    "question_text": "While troubleshooting a network connectivity problem on a Windows Server system, you need to view a list of the IP addresses that have been resolved to MAC addresses. What command would you use to do this?",
+    "explanation": "The arp -a command displays the ARP cache, which contains IP-to-MAC address mappings learned by the system.",
+    "choices": [
+      {"text": "arp -a", "correct": true},
+      {"text": "nbtstat -a", "correct": false},
+      {"text": "arp -d", "correct": false},
+      {"text": "arp -s", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Troubleshooting",
+    "question_text": "While troubleshooting a DNS issue from a UNIX server, you suspect that the DNS record for one of your other servers is incorrect. Which of the following utilities are you most likely to use to troubleshoot this problem?",
+    "explanation": "dig is a common UNIX/Linux DNS troubleshooting tool used to query DNS records and verify name resolution details.",
+    "choices": [
+      {"text": "dig", "correct": true},
+      {"text": "ipconfig", "correct": false},
+      {"text": "netstat", "correct": false},
+      {"text": "nbtstat", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Security",
+    "question_text": "A miscreant has added a rogue access point to your wireless network. Users are mistakenly connecting to that access point instead of the legitimate one they should connect to. What is this type of attack which eavesdrops on the wireless network known as?",
+    "explanation": "An evil twin attack uses a rogue wireless access point that impersonates a legitimate one so users connect to it, allowing the attacker to intercept traffic.",
+    "choices": [
+      {"text": "Evil twin", "correct": true},
+      {"text": "War driving", "correct": false},
+      {"text": "WEP cracking", "correct": false},
+      {"text": "DDoS", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Troubleshooting",
+    "question_text": "You are experiencing problems with the network connectivity of a Windows 7 system. You suspect that there might be a problem with an incorrect route in the routing table. Which of the following TCP/IP utilities can you use to view the routing table?",
+    "explanation": "The route command can display and manage the routing table, and netstat can display routing information with the appropriate options.",
+    "choices": [
+      {"text": "netstat", "correct": true},
+      {"text": "tracert", "correct": false},
+      {"text": "nbstat", "correct": false},
+      {"text": "ping", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Security",
+    "question_text": "Which of the following best describes the function of asymmetric key encryption?",
+    "explanation": "Asymmetric encryption uses a public/private key pair, where one key encrypts data and the other key decrypts it.",
+    "choices": [
+      {"text": "It uses both a private and public key to encrypt and decrypt messages.", "correct": true},
+      {"text": "It uses two private keys to encrypt and decrypt messages.", "correct": false},
+      {"text": "It uses a single key for both encryption and decryption.", "correct": false},
+      {"text": "It uses three separate keys for both encryption and decryption.", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Concepts",
+    "question_text": "Which of the following services provides name resolution services for FQDNs?",
+    "explanation": "DNS resolves fully qualified domain names (FQDNs) into IP addresses so devices can locate hosts on the network.",
+    "choices": [
+      {"text": "DNS", "correct": true},
+      {"text": "DHCP", "correct": false},
+      {"text": "WINS", "correct": false},
+      {"text": "ARP", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Implementation",
+    "question_text": "You are installing a 100BaseFX network, and you need to purchase connectors. Which of the following might you purchase?",
+    "explanation": "100BaseFX is a fiber-optic Ethernet standard, and common fiber connector types used with it include ST and SC.",
+    "choices": [
+      {"text": "ST", "correct": true},
+      {"text": "RJ-45", "correct": false},
+      {"text": "BNC", "correct": false},
+      {"text": "RJ-11", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Security",
+    "question_text": "To increase wireless network security, you have decided to implement port-based security. Which of the following standards specifies port-based access control?",
+    "explanation": "802.1X is the IEEE standard for port-based Network Access Control (NAC), commonly used to authenticate devices before granting network access.",
+    "choices": [
+      {"text": "802.1x", "correct": true},
+      {"text": "802.11x", "correct": false},
+      {"text": "802.11b", "correct": false},
+      {"text": "802.1b", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Concepts",
+    "question_text": "When designing a network, you have been asked to select a cable that offers the most resistance to crosstalk. Which of the following are you likely to choose?",
+    "explanation": "Fiber-optic cabling is immune to electromagnetic interference and crosstalk because it transmits data as light rather than electrical signals.",
+    "choices": [
+      {"text": "Multimode fiber-optic", "correct": true},
+      {"text": "Shielded twisted pair", "correct": false},
+      {"text": "UTP", "correct": false},
+      {"text": "Shielded mesh", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Operations",
+    "question_text": "Which of the following are considered disaster recovery measures?",
+    "explanation": "Backups and offsite data storage are core disaster recovery measures because they help restore systems and data after a major outage or disaster.",
+    "choices": [
+      {"text": "Offsite data storage", "correct": true},
+      {"text": "Prayer", "correct": false},
+      {"text": "UPS", "correct": false},
+      {"text": "RAID 5", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Troubleshooting",
+    "question_text": "Which command produces the following output? Interface: 24.77.218.58 --- Internet Address: 24.77.216.1 Physical Address: 00-00-77-99-a4-4c dynamic",
+    "explanation": "The arp command displays the ARP cache, which maps IP addresses to physical MAC addresses and shows entries marked as dynamic or static.",
+    "choices": [
+      {"text": "arp", "correct": true},
+      {"text": "tracert", "correct": false},
+      {"text": "ipconfig", "correct": false},
+      {"text": "netinf", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Implementation",
+    "question_text": "You are working with a wireless network that is using channel 1 (2412MHz). What RF range would be used if you switched to channel 3?",
+    "explanation": "In the 2.4 GHz band, channel 3 uses a center frequency of 2422 MHz.",
+    "choices": [
+      {"text": "2422", "correct": true},
+      {"text": "2417", "correct": false},
+      {"text": "2427", "correct": false},
+      {"text": "2408", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Security",
+    "question_text": "What is the basic purpose of a firewall system?",
+    "explanation": "A firewall protects one network from another by filtering and controlling traffic that passes between them.",
+    "choices": [
+      {"text": "It provides a single point of access to the Internet.", "correct": false},
+      {"text": "It caches commonly used web pages, thereby reducing the bandwidth demands on an Internet connection.", "correct": false},
+      {"text": "It allows hostnames to be resolved to IP addresses.", "correct": false},
+      {"text": "It protects one network from another by acting as an intermediary system.", "correct": true}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Implementation",
+    "question_text": "As part of a network upgrade, you have installed a router on your network connecting two networks. Now, workstations on one side of the router cannot access workstations on the other side. Which of the following configuration changes would you need to make to the workstations to enable them to see devices on the other network? (Choose two.)",
+    "explanation": "To communicate across a router, hosts must use the router interface on their own subnet as the default gateway, and the IP addressing on each side of the router must be in different networks.",
+    "choices": [
+      {"text": "Update the default gateway information on all systems so they use the newly installed router as the gateway.", "correct": true},
+      {"text": "Change the IP address assignments on one side of the router so that the router is on a different IP network from the other one.", "correct": true},
+      {"text": "Update the default gateway information on all systems so that they use a workstation on the other network as the default gateway.", "correct": false},
+      {"text": "Make sure that the IP address assignments on all network workstations are the same.", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Implementation",
+    "question_text": "Which type of cable should be used to swap out a bad run in a 1000BaseT network?",
+    "explanation": "1000BaseT Gigabit Ethernet over copper requires Category 5e UTP or better, making Cat 5e the correct replacement cable type.",
+    "choices": [
+      {"text": "Category 5e UTP", "correct": true},
+      {"text": "RG-58", "correct": false},
+      {"text": "Category 5 UTP", "correct": false},
+      {"text": "Multimode fiber", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Concepts",
+    "question_text": "Which of the following network types is easiest to add new nodes to?",
+    "explanation": "A star topology is easiest to expand because each new device can be connected directly to the central switch or hub without disrupting the rest of the network.",
+    "choices": [
+      {"text": "Star", "correct": true},
+      {"text": "Bus", "correct": false},
+      {"text": "Ring", "correct": false},
+      {"text": "Mesh", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Troubleshooting",
+    "question_text": "You are troubleshooting a network connectivity error, and you need to issue a continuous ping command. Which of the following switches is used with ping to send a continuous ping message?",
+    "explanation": "On Windows systems, the -t switch is used with ping to send echo requests continuously until the command is manually stopped.",
+    "choices": [
+      {"text": "-t", "correct": true},
+      {"text": "-p", "correct": false},
+      {"text": "-c", "correct": false},
+      {"text": "-r", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Troubleshooting",
+    "question_text": "You recently installed a DHCP server to replace static IP addressing. You configure all client systems to use DHCP and then reboot each system. After they are rebooted, they all have IP addresses in the 169.254.0.0 range. Which of the following statements is true?",
+    "explanation": "An address in the 169.254.0.0/16 APIPA range indicates the client could not contact a DHCP server and self-assigned an address.",
+    "choices": [
+      {"text": "Client systems cannot access the new DHCP server.", "correct": true},
+      {"text": "The DHCP server has been configured to assign addresses in the 169.254.0.0 IP range.", "correct": false},
+      {"text": "The DHCP server must be rebooted.", "correct": false},
+      {"text": "Client systems receive IP address information from the HOSTS file.", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Concepts",
+    "question_text": "Placing a node on which of the following types of networks would require that you obtain an address from the IANA (whether you do so directly or an ISP does so on your behalf)?",
+    "explanation": "A public network requires a globally unique public IP address, which ultimately comes from IANA through regional registries and ISPs.",
+    "choices": [
+      {"text": "Public network", "correct": true},
+      {"text": "Private network", "correct": false},
+      {"text": "Ethernet network", "correct": false},
+      {"text": "LAN", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Implementation",
+    "question_text": "You are troubleshooting a client's network. From the network specifications, you learn that you will be using the 1000BaseCX standard. What type of cable will you use?",
+    "explanation": "1000BaseCX is the Gigabit Ethernet standard that uses shielded twisted pair copper cabling over short distances.",
+    "choices": [
+      {"text": "STP", "correct": true},
+      {"text": "Multimode fiber", "correct": false},
+      {"text": "Single-mode fiber", "correct": false},
+      {"text": "CoreXtended fiber", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Concepts",
+    "question_text": "Which of the following network protocols can recover from lost or corrupted packets in a network transmission?",
+    "explanation": "TCP provides reliable delivery through acknowledgments, sequencing, retransmission, and error recovery for lost or corrupted packets.",
+    "choices": [
+      {"text": "TCP", "correct": true},
+      {"text": "L2TP", "correct": false},
+      {"text": "FTP", "correct": false},
+      {"text": "ARP", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Security",
+    "question_text": "Your colleague decides to close all unused ports on the corporate firewall to secure the network from intruders. The open ports are 25, 80, 110, and 143. Your colleague knows that ports 25 and 110 are required, 110 and 143 are required, and that 80 is used for nonsecure web browsing, so he decides to close port 53 because he doesn't think it is necessary. Which network service is now unavailable?",
+    "explanation": "Port 53 is used by DNS for name resolution, so closing it would prevent DNS queries from working.",
+    "choices": [
+      {"text": "DNS", "correct": true},
+      {"text": "Secure HTTP", "correct": false},
+      {"text": "FTP", "correct": false},
+      {"text": "Telnet", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Troubleshooting",
+    "question_text": "You are working on a Linux system, and you suspect that there might be a problem with the TCP/IP configuration. Which of the following commands would you use to view the system's network card configuration?",
+    "explanation": "On Linux systems, ifconfig is used to display and configure network interface settings.",
+    "choices": [
+      {"text": "ifconfig", "correct": true},
+      {"text": "config", "correct": false},
+      {"text": "ipconfig", "correct": false},
+      {"text": "winipcfg", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Operations",
+    "question_text": "You have configured network clients to obtain IP addresses using APIPA. Which of the following IP ranges would be assigned to client systems?",
+    "explanation": "APIPA uses the 169.254.0.0/16 range, allowing hosts to self-assign addresses when a DHCP server is unavailable.",
+    "choices": [
+      {"text": "169.254.0.1 to 169.254.255.254", "correct": true},
+      {"text": "10.10.0.0 to 10.254.254.0", "correct": false},
+      {"text": "169.168.0.0 to 169.168.255.255", "correct": false},
+      {"text": "192.168.0.0 to 192.168.254.254", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Implementation",
+    "question_text": "Your manager asks you to implement a fault-tolerant disk solution on your server. You have two 3TB hard disks and two controllers, so you decide to implement RAID 1. After the installation, your manager asks you how much storage space is now available for storing data. What do you tell her?",
+    "explanation": "RAID 1 mirrors data across disks, so the usable capacity is equal to the size of one disk in the mirror set.",
+    "choices": [
+      {"text": "3TB", "correct": true},
+      {"text": "4TB", "correct": false},
+      {"text": "6TB", "correct": false},
+      {"text": "12TB", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Concepts",
+    "question_text": "Which of the following statements best describes PRI ISDN?",
+    "explanation": "In North America, PRI ISDN provides 23 bearer (B) channels and one data/control (D) channel.",
+    "choices": [
+      {"text": "PRI ISDN uses 23 B channels and one D channel.", "correct": true},
+      {"text": "PRI ISDN uses 128 B channels and two D channels.", "correct": false},
+      {"text": "PRI ISDN uses two B channels and one D channel.", "correct": false},
+      {"text": "PRI ISDN uses 23 D channels and one B channel.", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Implementation",
+    "question_text": "Which of the following media types is used with the 802.3 1000BaseSX standard?",
+    "explanation": "1000BaseSX is a Gigabit Ethernet fiber standard that uses multimode fiber-optic cabling over short distances.",
+    "choices": [
+      {"text": "Multimode fiber-optic", "correct": true},
+      {"text": "Coaxial", "correct": false},
+      {"text": "UTP", "correct": false},
+      {"text": "Single-mode fiber-optic", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Concepts",
+    "question_text": "What is the name of the bridging method used to segregate Ethernet networks?",
+    "explanation": "Transparent bridging is the Ethernet bridging method commonly used to segment or segregate Ethernet networks while learning MAC addresses automatically.",
+    "choices": [
+      {"text": "Transparent", "correct": true},
+      {"text": "Source-route", "correct": false},
+      {"text": "Invisible", "correct": false},
+      {"text": "Cut-through", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Concepts",
+    "question_text": "Which of the following IEEE specifications does CSMA/CD relate to?",
+    "explanation": "CSMA/CD is the media access method associated with Ethernet, which is defined by IEEE 802.3.",
+    "choices": [
+      {"text": "802.3", "correct": true},
+      {"text": "802.11b", "correct": false},
+      {"text": "802.2", "correct": false},
+      {"text": "802.5", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Concepts",
+    "question_text": "At which layer of the OSI model does a NIC operate?",
+    "explanation": "A NIC primarily operates at the Data Link layer because it handles MAC addressing and frame access to the physical medium.",
+    "choices": [
+      {"text": "Data link", "correct": true},
+      {"text": "Physical", "correct": false},
+      {"text": "Network", "correct": false},
+      {"text": "Transport", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Implementation",
+    "question_text": "You are installing a wireless network solution that uses a feature known as MIMO. Which wireless networking standard are you using?",
+    "explanation": "802.11n introduced MIMO technology to improve throughput and signal reliability by using multiple antennas for transmission and reception.",
+    "choices": [
+      {"text": "802.11n", "correct": true},
+      {"text": "802.11a", "correct": false},
+      {"text": "802.11b", "correct": false},
+      {"text": "802.11g", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Concepts",
+    "question_text": "You are implementing a 1000BaseT network. Which logical topology does the network use?",
+    "explanation": "1000BaseT Ethernet networks are typically implemented in a star topology, with each device connected back to a central switch.",
+    "choices": [
+      {"text": "Star", "correct": true},
+      {"text": "Ring", "correct": false},
+      {"text": "Mesh", "correct": false},
+      {"text": "Bus", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Troubleshooting",
+    "question_text": "Which command produces the following output?\n\nProto  Local Address          Foreign Address        State\nTCP    laptop:2488           MEDIASERVICE51:755    ESTABLISHED\nTCP    laptop:1833           www.dollarhost.com:80 ESTABLISHED\nTCP    laptop:2858           194.70.58.241:80      ESTABLISHED\nTCP    laptop:2860           194.70.58.241:80      ESTABLISHED\nTCP    laptop:2354           www.dollarhost.com:80 ESTABLISHED\nTCP    laptop:2361           www.dollarhost.com:80 ESTABLISHED\nTCP    laptop:1114           www.dollarhost.com:80 ESTABLISHED\nTCP    laptop:1959           www.dollarhost.com:80 ESTABLISHED\nTCP    laptop:1960           www.dollarhost.com:80 ESTABLISHED\nTCP    laptop:1963           www.dollarhost.com:80 ESTABLISHED\nTCP    laptop:2870           localhost:8431        TIME_WAIT\nTCP    laptop:8431           localhost:2862        TIME_WAIT\nTCP    laptop:8431           localhost:2863        TIME_WAIT\nTCP    laptop:8431           localhost:2867        TIME_WAIT\nTCP    laptop:8431           localhost:2872        TIME_WAIT",
+    "explanation": "The netstat command displays active TCP connections, including local addresses, foreign addresses, and connection states such as ESTABLISHED and TIME_WAIT.",
+    "choices": [
+      {"text": "netstat", "correct": true},
+      {"text": "arp", "correct": false},
+      {"text": "nbtstat", "correct": false},
+      {"text": "tracert", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Concepts",
+    "question_text": "Which of the following devices are specifically designed to deal with attenuation? (Choose two.)",
+    "explanation": "Repeaters regenerate weakened signals to overcome attenuation, and switches also regenerate signals as frames are forwarded between ports.",
+    "choices": [
+      {"text": "Repeater", "correct": true},
+      {"text": "Switch", "correct": true},
+      {"text": "Passive hub", "correct": false},
+      {"text": "DHCP server", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Operations",
+    "question_text": "You have installed a web-based database system on your PC so that you can enter troubleshooting information and retrieve it from any location on the network. Your system's IP address is 192.168.1.164. You are not overly concerned about security, but as a basic measure, you allocate the web server application a port number of 9191 rather than the default port of 80. Assuming that you are working from another system on the network, what would you type into the address bar of a web browser to access the database?",
+    "explanation": "When a web service runs on a nondefault port, the URL must include a colon followed by the port number after the IP address.",
+    "choices": [
+      {"text": "http://192.168.1.164:9191", "correct": true},
+      {"text": "http://192.168.1.164.9191", "correct": false},
+      {"text": "http://192.168.1.164/9191", "correct": false},
+      {"text": "http://192.168.1.164|9191", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Concepts",
+    "question_text": "Which of the following protocols maps Layer 2 addresses to Layer 3 addresses on a TCP/IP network?",
+    "explanation": "ARP maps Layer 3 IPv4 addresses to Layer 2 MAC addresses so frames can be delivered on the local network.",
+    "choices": [
+      {"text": "ARP", "correct": true},
+      {"text": "ARPA", "correct": false},
+      {"text": "AARP", "correct": false},
+      {"text": "RARP", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Operations",
+    "question_text": "You have been asked to implement a server clustering strategy. Which of the following are reasons to use server clustering? (Choose two.)",
+    "explanation": "Server clustering is used to improve service availability by increasing fault tolerance and reducing downtime when a server fails.",
+    "choices": [
+      {"text": "To increase server service fault tolerance", "correct": true},
+      {"text": "To reduce network downtime", "correct": true},
+      {"text": "To increase data transmission security over the LAN", "correct": false},
+      {"text": "To increase data transmission security over the WAN", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Concepts",
+    "question_text": "Which of the following is not a type of Digital Subscriber Line (DSL) technology?",
+    "explanation": "XTDSL is not a real DSL standard, whereas VHDSL, RADSL, and ADSL are recognized DSL technologies.",
+    "choices": [
+      {"text": "XTDSL", "correct": true},
+      {"text": "VHDSL", "correct": false},
+      {"text": "RADSL", "correct": false},
+      {"text": "ADSL", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Troubleshooting",
+    "question_text": "You come into work on Monday to find that the DHCP server failed over the weekend. Before you can fix it, DHCP-enabled client systems boot up and can communicate with each other. However, they cannot directly access the Internet or a remote network segment. Given that the DHCP server has failed, how can the systems communicate?",
+    "explanation": "When DHCP is unavailable, Windows clients can self-assign APIPA addresses in the 169.254.0.0/16 range, allowing local subnet communication but not routed access to remote networks.",
+    "choices": [
+      {"text": "The client systems are assigned an IP address using APIPA.", "correct": true},
+      {"text": "The DHCP service was recovered automatically using the Windows XP automatic restoration utility.", "correct": false},
+      {"text": "The DHCP addressing information was obtained from the client cache.", "correct": false},
+      {"text": "The client systems are using static IP addressing.", "correct": false}
+    ]
+  },
+  {
+    "cert": "Network+",
+    "domain": "Network Security",
+    "question_text": "Which of the following are reasons to implement a proxy server? (Choose two.)",
+    "explanation": "Proxy servers can centrally control users' Internet access and help protect internal systems by acting as an intermediary between clients and external resources.",
+    "choices": [
+      {"text": "To centrally control Internet access", "correct": true},
+      {"text": "To protect the internal network from intruders", "correct": true},
+      {"text": "To provide NAT services", "correct": false},
+      {"text": "To provide automatic IP addressing on the network", "correct": false}
+    ]
   }
 ]
